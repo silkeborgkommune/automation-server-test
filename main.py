@@ -43,7 +43,7 @@ async def process_workqueue(workqueue: Workqueue):
     # Start Playwright
     async with async_playwright() as p:
         # Launch Chrome with necessary options
-        browser = await p.chromium.launch(headless=False, args=["--disable-search-engine-choice-screen"])
+        browser = await p.chromium.launch(headless=True, args=["--disable-search-engine-choice-screen"])
         page = await browser.new_page()
 
         for item in workqueue:
