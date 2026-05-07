@@ -10,6 +10,7 @@ async def populate_queue(workqueue: Workqueue):
     logger = logging.getLogger(__name__)
 
     logger.info("Hello from populate workqueue!")
+    print("Hello from populate workqueue!")
 
     # List of names to post sequentially
     names = [
