@@ -43,7 +43,7 @@ if __name__ == "__main__":
     workqueue = ats.workqueue()
 
     # Database connection parameters
-    database_RPA_OEKIT_credential = Credential.get_credential("Database-RPA_OEKIT")
+    #database_RPA_OEKIT_credential = Credential.get_credential("Database-RPA_OEKIT")
 
  # Queue management
     if "--queue" in sys.argv:
