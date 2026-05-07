@@ -23,7 +23,9 @@ async def populate_queue(workqueue: Workqueue):
     for i, name in enumerate(names):
         # Create the data object as a string
         data = {
-            "name": name
+            "name": name,
+            "alder": 0
+            
         }
        
         try:
